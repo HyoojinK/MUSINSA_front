@@ -14,7 +14,7 @@ $(".loginForm").on("submit", function (e) {
     //일치한 값이 있다면
     localStorage.setItem("userid", myid); // 로컬스토리지 userid에 myid를 대입
     localStorage.setItem("userpw", mypw); // 로컬스토리지 userpw에 mypw를 대입
-    location.href = "../html/index.html";
+    location.href = "/index.html";
   } else {
     // 일치한 값이 없다면
     alert("아이디와 비밀번호를 확인해주세요");
