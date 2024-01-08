@@ -107,6 +107,6 @@ $("#join form").on("submit", function (e) {
     userlist.push(newuser); // userlist 배열에 newuser 넣기
     localStorage.setItem("users", JSON.stringify(userlist));
     // 로컬스토리지의 user키에 userlist의 값을 넣기
-    location.href = "../html/login.html";
+    location.href = "../login.html";
   }
 });

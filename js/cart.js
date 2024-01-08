@@ -209,8 +209,8 @@ $(".contain .table2 ul li button").on("click", function () {
   let myid = localStorage.getItem("userid");
   if (!myid) {
     alert("로그인 후 구매하실 수 있습니다.");
-    location.href = "../html/login.html";
+    location.href = "../login.html";
   } else {
-    location.href = "../html/buy.html";
+    location.href = "../buy.html";
   }
 });

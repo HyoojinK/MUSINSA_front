@@ -304,9 +304,9 @@ $("body").on("submit", ".prdInfo", function (e) {
   } else {
     if (!myid) {
       alert("로그인 후 구매하실 수 있습니다.");
-      location.href = "../html/login.html";
+      location.href = "../login.html";
     } else {
-      location.href = "../html/buy.html";
+      location.href = "../buy.html";
     }
   }
 });

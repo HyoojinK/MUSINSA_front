@@ -4,7 +4,7 @@ function usedata(mcate) {
   if (mcate == "전체") {
     data.forEach((value) => {
       ulli += `<li>`;
-      ulli += `<a href="../html/detail.html?${value.brand}&${value.name}&${value.price}&${value.option.size}&${value.option.color}&${value.bcatecogy}&${value.mcategory}&${value.image}&${value.grade}">`;
+      ulli += `<a href="../detail.html?${value.brand}&${value.name}&${value.price}&${value.option.size}&${value.option.color}&${value.bcatecogy}&${value.mcategory}&${value.image}&${value.grade}">`;
       ulli += `<img src="../img/json/${value.image}" alt="${value.name}" >`;
       ulli += `<div class="info">`;
       ulli += `<p class="brand">${value.brand}</p>`;
@@ -17,7 +17,7 @@ function usedata(mcate) {
     let newdata = data.filter((value) => value.mcategory == mcate);
     newdata.forEach((value) => {
       ulli += `<li>`;
-      ulli += `<a href="../html/detail.html?${value.brand}&${value.name}&${value.price}&${value.option.size}&${value.option.color}&${value.bcatecogy}&${value.mcategory}&${value.image}&${value.grade}"">`;
+      ulli += `<a href="../detail.html?${value.brand}&${value.name}&${value.price}&${value.option.size}&${value.option.color}&${value.bcatecogy}&${value.mcategory}&${value.image}&${value.grade}"">`;
       ulli += `<img src="/img/json/${value.image}" alt="${value.name}" >`;
       ulli += `<div class="info">`;
       ulli += `<p class="brand">${value.brand}</p>`;

@@ -18,7 +18,7 @@ $(".slide-btn .next-btn").on("click", function () {
   }
 });
 
-$(".header").load("./html/header.html", function () {
+$(".header").load("./header.html", function () {
   let getmyid = localStorage.getItem("userid");
   let getmypw = localStorage.getItem("userpw");
 
@@ -43,7 +43,7 @@ $(".header").load("./html/header.html", function () {
       localStorage.removeItem("userpw");
       $(this)
         .attr({
-          href: "./html/login.html",
+          href: "./login.html",
         })
         .text("LOGIN");
       $(this).next().removeClass("on");
@@ -51,4 +51,4 @@ $(".header").load("./html/header.html", function () {
   });
 });
 
-$(".footer").load("./html/footer.html");
+$(".footer").load("./footer.html");
