@@ -81,33 +81,12 @@ $(".randomkeysamebtn").on("click", function () {
     }
 });
 
-// 인증번호의 값이 일치하지 않다면
-// if ($("#userhpaw").val() != randomNum) {
-//   alert("인증번호를 다시 확인해주세요.");
-//   retrun;
-// }
 
 //제출하기 버튼을 눌렀을 때
 $("#join form").on("submit", function (e) {
   e.preventDefault();
 
-  // input에 빈칸이 있는지 확인하는 방법
-  // let flag = true;
-  // $("#join form input").each(function () {
-  //   if ($(this).val() == "") {
-  //     alert("모든값을 입력하세요");
-  //     return;
-  //   }
-  // });
-  // if (flag) {
-  //   alert("무신사에 오신것을 환영합니다.");
-  //   console.log("두번체크");
-  // } else {
-  //   alert("모든값을 입력하세요");
-  //   return;
-  // }
 
-  // 어떤 내용이 빠졌는지 친절하게 알려주는 방법
   let userid = $("#userid").val();
   if (!userid) {
     alert("아이디를 입력해주세요.");
@@ -177,6 +156,6 @@ $("#join form").on("submit", function (e) {
     userlist.push(newuser); // userlist 배열에 newuser 넣기
     localStorage.setItem("users", JSON.stringify(userlist));
     // 로컬스토리지의 user키에 userlist의 값을 넣기
-    location.href = "./html/login.html";
+    location.href = "./login.html";
   }
 });
