@@ -1,4 +1,4 @@
-$(".header").load("header.html", function () {
+$(".header").load("./header.html", function () {
   let getmyid = localStorage.getItem("userid");
   let getmypw = localStorage.getItem("userpw");
 
@@ -31,4 +31,4 @@ $(".header").load("header.html", function () {
   });
 });
 
-$(".footer").load("footer.html");
+$(".footer").load("./footer.html");
