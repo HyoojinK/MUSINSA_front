@@ -20,7 +20,6 @@
     />
 
     <link rel="stylesheet" href="./css/index.css" />
-    <style></style>
   </head>
   <body>
     <div class="header"></div>
@@ -260,39 +259,5 @@
     <div class="footer"></div>
 
     <script src="./js/index.js"></script>
-    <script>$(".header").load("./html/header.html", function () {
-      let getmyid = localStorage.getItem("userid");
-      let getmypw = localStorage.getItem("userpw");
-    
-      if (getmyid && getmypw) {
-        console.log("맞습니다.");
-        $(".loginsp p").text("LOGOUT");
-        $(".loginsp a").attr({
-          href: "javascript:;",
-        });
-        $(".joinsp a").css({
-          display: "none",
-        });
-        $(".mysp").addClass("on");
-      }
-    
-      $(".loginsp a").on("click", function () {
-        let text = $(this).find("p").text();
-        // let text = $(this).text()
-        if (text == "LOGOUT") {
-          //   sessionStorage.clear();
-          localStorage.removeItem("userid");
-          localStorage.removeItem("userpw");
-          $(this)
-            .attr({
-              href: "./html/login.html",
-            })
-            .text("LOGIN");
-          $(this).next().removeClass("on");
-        }
-      });
-    });
-    
-    $(".footer").load("./html/footer.html");</script>
   </body>
 </html>
