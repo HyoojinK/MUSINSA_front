@@ -30,7 +30,7 @@ function listing() {
     cartList.forEach((value) => {
       trList += `<tr>`;
       trList += `<td>`;
-      trList += `<img src="../img/json/${value.photo}"alt="${value.name}"></td>`;
+      trList += `<img src="./img/json/${value.photo}"alt="${value.name}"></td>`;
       trList += `<td class="pricename">${
         value.name
       }<br><br><span class="price won">${value.price
@@ -209,8 +209,8 @@ $(".contain .table2 ul li button").on("click", function () {
   let myid = localStorage.getItem("userid");
   if (!myid) {
     alert("로그인 후 구매하실 수 있습니다.");
-    location.href = "../login.html";
+    location.href = "./login.html";
   } else {
-    location.href = "../buy.html";
+    location.href = "./buy.html";
   }
 });

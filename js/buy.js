@@ -25,7 +25,7 @@ orderList.forEach((value) => {
   orList += `<tbody>`;
   orList += ` <tr>
                 <td class="image">`;
-  orList += `<img src="../img/json/${value.photo}" alt="${value.name}" />`;
+  orList += `<img src="./img/json/${value.photo}" alt="${value.name}" />`;
   orList += `</td>`;
   orList += `<td class="name">${value.name}</td>`;
   orList += `<td class="oneprice won">${value.price

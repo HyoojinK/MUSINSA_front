@@ -47,7 +47,7 @@ let ptlink = pt[0];
 console.log(ptlink);
 let dpt = "";
 for (let i = 1; i < 20; i++) {
-  dpt += `<img src="../img/json/${ptlink}_detail/${ptlink}_detail${i}.jpg" alt="" />`;
+  dpt += `<img src="./img/json/${ptlink}_detail/${ptlink}_detail${i}.jpg" alt="" />`;
 }
 console.log(dpt);
 // console.log(star);
@@ -56,7 +56,7 @@ console.log(dpt);
 let detail_info = `<div class="detail_info">`;
 detail_info += `<form action="#" method="post" class="prdInfo">`;
 detail_info += `<div class="prd_photo">`;
-detail_info += `<img src="../img/json/${image}" alt="${pname}" /></div>`;
+detail_info += `<img src="./img/json/${image}" alt="${pname}" /></div>`;
 detail_info += `<div class="prd_info">`;
 detail_info += `<div class="prd_info_item">`;
 detail_info += `<p class="brand">${brand}</p>`;
@@ -304,9 +304,9 @@ $("body").on("submit", ".prdInfo", function (e) {
   } else {
     if (!myid) {
       alert("로그인 후 구매하실 수 있습니다.");
-      location.href = "../login.html";
+      location.href = "./login.html";
     } else {
-      location.href = "../buy.html";
+      location.href = "./buy.html";
     }
   }
 });
